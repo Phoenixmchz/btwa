@@ -1,0 +1,27 @@
+{
+  "name": "Phinix Bot",
+    "logo": "https://i.ibb.co/xjzx6PJ/Whats-App-Image-2021-11-25-at-19-26-49.jpg",
+    "description": "2021 ©Phinix",
+  "keywords": ["nodejs", "bot", "whatsapp bot"]
+    "repository": "https://github.com/HelgaIlham/HELGAV11",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
